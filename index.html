@@ -1,23 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="style.css">
-    <title>tic-tac-toe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
-    <div class="win hide">
-        <div class="img">
-
-        </div>
-        <h1 class="cong">"player O" is winner!</h1>
-        <button class="new">new</button>
-    </div>
-    <h1>Tic-Tac-Toe</h1>
-    <h2>Player O turn</h2>
+    <h1><i class="fas fa-times-circle"></i> Tic-Tac-Toe <i class="far fa-circle"></i></h1>
+    <h2>Player O's turn</h2>
+    
     <div class="container">
         <div class="game">
             <button class="box"></button>
@@ -31,8 +25,16 @@
             <button class="box"></button>
         </div>
     </div>
-    <button class="reset">Reset</button>
+    
+    <div>
+        <button class="reset"><i class="fas fa-redo"></i> Reset</button>
+    </div>
+    
+    <div class="win hide">
+        <h1 class="cong">Player <span id="winner-name">O</span> wins!</h1>
+        <button class="new"><i class="fas fa-gamepad"></i> New Game</button>
+    </div>
+
     <script src="app.js"></script>
 </body>
-
 </html>
